@@ -1,0 +1,58 @@
+.hero {
+  text-align: center;
+  height: $heroHeight;
+  position: relative;
+
+  border-bottom: 2px solid hsl(52, 85%, 51%);
+  
+  .hero__headline {
+    font-family: 'permanent_markerregular', Arial, sans-serif;
+    
+    line-height: 1em;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.6);
+    color: $mainColor;
+    position: relative;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+    @include improve-heading;
+    // animation: heartbeat 7s ease infinite alternate;
+    transform: translateY(-50%) rotate(-2deg) rotateY(0);
+
+    font-size: 4.4rem;
+    @media (min-width: $tablet) {
+      font-size: 6vw;
+    }
+  }
+
+  .hero__subheadline {
+    @extend .hero__headline;
+    font-size: 4.4rem;
+
+    display: block;
+    padding-top:4.4rem;
+  }
+
+  &::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background: url(/assets/coding-bg.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: translateY(-50%) rotate(-2deg) rotateY(0);
+  }
+  100% {
+    transform:  translateY(-50%) rotate(-2deg) rotateY(15deg);
+  }
+}

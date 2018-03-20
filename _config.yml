@@ -1,0 +1,27 @@
+title: Web Development Blog by Phil Oxrud
+email: philoxrud@gmail.com
+description: >-
+  A blog about advanced concepts in web development, programming, and tools. 
+baseurl: "" 
+url: "http://blog.oxrud.com"
+twitter: poxrud
+github:  poxrud
+
+permalink: /posts/:title
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    style: compressed
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,20 @@
+.media-object {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+  > img {
+    width: 100px;
+    height: 100%;
+    margin-right: 3rem;
+  }
+
+  @media (min-width: $tablet) {
+    justify-content: space-around;
+
+    >img {
+      margin: 0;
+    }
+  }
+}

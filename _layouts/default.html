@@ -1,0 +1,60 @@
+<!-- \ \    / / __| |  / __/ _ \|  \/  | __|
+      \ \/\/ /| _|| |_| (_| (_) | |\/| | _| 
+       \_/\_/ |___|____\___\___/|_|  |_|___|
+                                         
+Thanks for checking out the source. 
+- generated with jekyll
+- using scss and BEM
+
+Made by: Phil Oxrud
+@poxrud
+phil@oxrud.com
+-->
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <title>Web Development Blog by Phil Oxrud</title>
+  <meta name="description" content="{{ site.description }}"/>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">  
+  {% include icons-svgs.html %}
+</head>
+
+<body>
+    <div class="hero">
+      <p class="hero__headline">Web Development<span class="hero__subheadline">blog</span></p>
+    </div>
+    
+    <div id="container">
+      <section class="sidebar">
+        <div class="media-object">
+          <img class="rounded-img" src="/assets/philoxrud.jpg"  class="avatar" />
+          <div>
+            <h3>Phil Oxrud</h3>
+            <div class="social-icons">
+              {% include icon-twitter.html %}
+              {% include icon-github.html %}
+            </div>
+          </div>
+        </div>
+        <ul class="nav">
+          <li><a href="/">Posts</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </section>
+      <main class="content">
+          {{ content }}
+      </main>
+    </div>
+  </div>
+
+<footer>
+  {% include footer.html %} 
+</footer>
+
+</body>
+</html>

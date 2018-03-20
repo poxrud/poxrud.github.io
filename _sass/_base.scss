@@ -1,0 +1,94 @@
+$golden-ratio: 1.33;
+$font-base: 1.6rem;
+$line-height-base: $font-base * 1.5;
+
+$heroHeight: $line-height-base * 10;
+
+$bodyColor: hsl(21, 9%, 28%);
+
+$mainColor: #ff813f;
+$secondaryColor: hsl(21, 9%, 27%);
+$lightGray: hsl(21, 9%, 60%);
+
+$tablet: "600px";
+$desktop: "900px";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: "Arvo";
+  font-size: $font-base;
+  line-height: $line-height-base; 
+  color: $bodyColor;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+#container {
+  @media(min-width: $tablet) {
+    display: flex;
+    justify-content:flex-start;
+    flex: 1; 
+  }
+  width: 100vw;
+}
+
+.content {
+  
+  padding: $line-height-base;
+  padding-top: 0;
+  margin-top: 1.6rem;
+  background-color: #fff;
+ 
+  h1, h2, h3, h4 {
+    color: $secondaryColor;
+  }
+
+  h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  @media(min-width: $tablet) {
+    width: 80%;
+    max-width: 800px;  
+
+    h1 {
+      margin-top: 0.67em;
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+pre {
+  white-space: pre-wrap; 
+  word-wrap: break-word; 
+}
+
+.social-icons {
+  text-align: center;
+  path {
+    fill: $mainColor;
+  }
+}
+
+code {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,51 @@
+$iconsColor: hsl(21, 56%, 80%);
+
+footer {
+  background-color: #f0f0f0;
+  
+  padding-top:2.6rem;
+  padding-bottom:2.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  .subscribe-box-small {
+    padding-top: 1.6rem;
+  }
+
+  .email {
+    line-height: calc(1.6rem*1.5);
+    border:1px solid $mainColor;
+  }
+
+  #mce-EMAIL {
+    padding-left:1rem;
+  }
+
+  #mc-embedded-subscribe {
+    line-height: calc(1.6rem*1.5);
+    padding-bottom: 1px;
+    margin-top:0.8rem;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+
+    >section {
+      width: 45%;
+    }
+  }
+}
+
+.footer__newsletter {
+  a {
+    text-decoration: none;
+  }
+
+  .social-icon {
+    fill: $iconsColor;
+    margin-top:0.6rem;
+  }
+
+  padding-bottom: 1.6rem;
+}

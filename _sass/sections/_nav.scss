@@ -1,0 +1,18 @@
+.nav {
+  font-size: ms(1);
+  position: relative;
+
+  width: 100%;
+}
+
+.sidebar {
+    &::after {
+    content: "";
+    display: block;
+    height:1px;
+    background-color: $mainColor;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

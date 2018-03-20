@@ -1,0 +1,9 @@
+@mixin line-height($font-size, $ratio: 1.5) {
+  line-height: ($font-size * $ratio) * 1rem;
+}
+
+@mixin improve-heading() {
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; 
+  text-rendering: optimizeLegibility;
+}

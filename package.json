@@ -1,0 +1,29 @@
+{
+  "name": "webdev-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poxrud/poxrud.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poxrud/poxrud.github.io/issues"
+  },
+  "homepage": "https://github.com/poxrud/poxrud.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "postcss-flexbugs-fixes": "^3.3.0"
+  }
+}

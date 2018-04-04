@@ -20,7 +20,7 @@ phil@oxrud.com
   <title>Web Development Blog by Phil Oxrud</title>
   <meta name="description" content="{{ site.description }}"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">  
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?{{ site.time | date: '%s%N' }}">
   {% include icons-svgs.html %}
 </head>
 

@@ -460,7 +460,7 @@ In Angular you can send an event from one place, and listen for it from another.
 We send events using $broadcast, and $emit methods. Just like with $watch these are always used on the local or global scope. 
 When you want to send an event from a parent to its children the $broadcast method is used. When you're sending events from the children to their respective parents, the $emit method is used instead. 
 
-![AngularJS events diagram](/examples/angular-youtube/events-diagram.png)
+![AngularJS events diagram](/assets/angular-youtube/events-diagram.png)
 
 To listen for events we use the ```$on``` method on the scope. 
 

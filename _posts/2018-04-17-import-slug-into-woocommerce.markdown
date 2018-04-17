@@ -1,7 +1,7 @@
 ---
 layout: post
 category: posts
-title: Importing Custom Slugs / Permalinks into WooCommerce
+title: Importing Custom Product Slugs / Permalinks into WooCommerce
 author: Phil Oxrud
 comments: true
 description: Guide to adding Slug/Permalink Importing functionality to WooCommerce's Product Import tool

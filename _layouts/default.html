@@ -18,8 +18,8 @@ phil@oxrud.com
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <title>Web Development Blog by Phil Oxrud</title>
-  <meta name="description" content="{{ site.description }}"/>
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?{{ site.time | date: '%s%N' }}">
   {% include icons-svgs.html %}
 </head>

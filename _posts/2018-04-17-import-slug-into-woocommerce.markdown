@@ -5,6 +5,7 @@ title: Importing Custom Product Slugs / Permalinks into WooCommerce
 author: Phil Oxrud
 comments: true
 description: Guide to adding Slug/Permalink Importing functionality to WooCommerce's Product Import tool
+post_image: /assets/slug-rename-mapping.jpg
 ---
 
 _NOTE: If you’re not a developer skip to the end to download the plugin that will let you add a “slug” column to the WooCommerce importer tool._

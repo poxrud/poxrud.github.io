@@ -4,6 +4,8 @@ category: posts
 title: Creating a YouTube AngularJS Directive
 author: Phil Oxrud
 comments: true
+description: A guide on creating a dynamic YouTube player using AngularJS 1.x
+post_image: /assets/angular-youtube/events-diagram.png
 ---
 
 

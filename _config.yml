@@ -3,9 +3,11 @@ email: philoxrud@gmail.com
 description: >-
   A blog about advanced concepts in web development, programming, and tools. 
 baseurl: "" 
-url: "http://blog.oxrud.com"
+url: "https://blog.oxrud.com"
 twitter: poxrud
 github:  poxrud
+
+image: /assets/philoxrud.jpg
 
 permalink: /posts/:title
 markdown: kramdown

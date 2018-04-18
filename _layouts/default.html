@@ -19,6 +19,9 @@ phil@oxrud.com
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+  
+  {% include twitter-card.html %}
+
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?{{ site.time | date: '%s%N' }}">
   {% include icons-svgs.html %}

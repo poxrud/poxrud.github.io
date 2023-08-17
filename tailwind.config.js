@@ -8,8 +8,10 @@ module.exports = {
     "./*.html"
   ],
   theme: {
-    theme: {
-      extend: {}
+    extend: {
+      colors: {
+        "cool-orange": "#ff813f"
+      }
     }
   },
   plugins: []

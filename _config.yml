@@ -1,0 +1,19 @@
+url: "https://blog.oxrud.com"
+baseurl: ""
+title: "Web Development Blog by Phil Oxrud"
+email: phil@oxrud.com
+description: >-
+  A blog about advanced concepts in web development, programming, and the cloud.
+
+twitter: poxrud
+github: poxrud
+
+image: /assets/philoxrud.jpg
+
+permalink: /posts/:title/
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false

@@ -1,0 +1,52 @@
+<!-- \ \    / / __| |  / __/ _ \|  \/  | __|
+      \ \/\/ /| _|| |_| (_| (_) | |\/| | _|
+       \_/\_/ |___|____\___\___/|_|  |_|___|
+
+Thanks for visiting.
+- generated with jekyll
+- hosted on github pages
+
+Made by: Phil Oxrud
+@poxrud
+phil@oxrud.com
+-->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+  <link rel="canonical" href="{{site.url}}{{page.url}}" />
+  <meta name="google-site-verification" content="cXJcXt8PxPjf0yl9Y2B7AjDuc46fq6rD2MtIaDwWB8A" />
+
+  {% include twitter-card.html %}
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {% include icons-svgs.html %}
+</head>
+
+<body class="bg-gray-100 min-h-screen flex justify-center items-center">
+  <div class="max-w-md w-full px-6">
+    <header class="text-center mb-8">
+        <h1 class="text-4xl font-semibold">Your Tech Blog</h1>
+        <p class="text-gray-600">Sharing Tech Insights</p>
+    </header>
+
+    <article class="prose max-w-none">
+        <h2 class="text-2xl font-semibold mb-4">The Latest Tech Trends</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo vel nunc blandit ultrices.</p>
+        <p>Etiam et metus eget ex vehicula convallis eu at mauris. Integer consequat tortor vitae consequat dictum.</p>
+    </article>
+
+    <footer class="text-center mt-8">
+        {% include footer.html %}
+        <p class="text-gray-500">© 2023 Your Tech Blog. All rights reserved.</p>
+    </footer>
+  </div>
+  {{ content }}
+</body>
+
+</html>

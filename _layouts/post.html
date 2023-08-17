@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="border-b-2">
+    <h1 itemprop="name headline"
+      class="text-center text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200"">{{ page.title | escape }}</h1>
+    <p class=" text-center py-2">
+
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        <svg class="inline h-6 w-5 fill-blue">
+          <use xlink:href="#calendar" />
+        </svg>
+        <span class="">{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          {{ page.date | date: date_format }}</span>
+      </time>
+      {% if page.author %}
+      &#8226; <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="author"><span
+          itemprop="name">{{ page.author }}</span></span>
+      {% endif %}
+      </p>
+  </header>
+
+  <div class="mx-auto py-8 prose md:prose-lg prose-headings:bold" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>
+
+{% if page.comments %}
+<section>
+  <div id="disqus_thread"></div>
+  <script>
+
+    var disqus_config = function () {
+      this.page.url = "{{site.url}}{{page.url}}";
+      // this.page.identifier = "{{page.url}}";
+    };
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://themoderndeveloper.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</section>
+{% endif %}

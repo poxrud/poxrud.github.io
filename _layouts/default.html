@@ -1,0 +1,56 @@
+<!-- \ \    / / __| |  / __/ _ \|  \/  | __|
+      \ \/\/ /| _|| |_| (_| (_) | |\/| | _|
+       \_/\_/ |___|____\___\___/|_|  |_|___|
+
+Thanks for visiting.
+- generated with jekyll
+- hosted on github pages
+
+Made by: Phil Oxrud
+@poxrud
+phil@oxrud.com
+-->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+  <link rel="canonical" href="{{site.url}}{{page.url}}" />
+  <meta name="google-site-verification" content="cXJcXt8PxPjf0yl9Y2B7AjDuc46fq6rD2MtIaDwWB8A" />
+
+  {% include twitter-card.html %}
+
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {% include icons-svgs.html %}
+</head>
+
+<body class="min-h-screen flex justify-center py-10">
+  <div class="max-w-5xl w-full px-6">
+    <header class="text-center mb-8">
+        <h1 class="hero__headline text-6xl text-cool-orange">Web Development and the Cloud</h1>
+        <div class="hero__subheadline text-4xl -mt-6">blog</div>
+        <nav class="flex pointer-events-auto justify-center py-4">
+          <ul class="flex justify-center align-middle max-w-fit rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+            <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/">Articles</a></li>
+            <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="/about">About</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    {{ content }}
+
+    <footer class="text-center mt-8">
+        {% comment}
+        {% include footer.html %}
+        {% endcomment %}
+        <p class="text-gray-500">© 2023 Phil Oxrud. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

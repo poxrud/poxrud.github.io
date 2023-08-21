@@ -5,6 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "pygments.css";
 
 @font-face {
   font-family: 'permanent_markerregular';
@@ -13,6 +14,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 .hero__headline {
   font-family: 'permanent_markerregular', Arial, sans-serif;

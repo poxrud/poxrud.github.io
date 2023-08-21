@@ -11,8 +11,11 @@ module.exports = {
     extend: {
       colors: {
         "cool-orange": "#ff813f"
-      }
+      },
+      fill: (theme) => ({
+        blue: theme("colors.blue.500")
+      })
     }
   },
-  plugins: []
+  plugins: [require("@tailwindcss/typography")]
 };

@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article class="border-b-2" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="border-b-2">
-    <h1 itemprop="name headline"
-      class="text-center text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200"">{{ page.title | escape }}</h1>
-    <p class=" text-center py-2">
-
+    <p class="text-center py-2">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         <svg class="inline h-6 w-5 fill-blue">
           <use xlink:href="#calendar" />
@@ -19,17 +16,22 @@ layout: default
       &#8226; <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="author"><span
           itemprop="name">{{ page.author }}</span></span>
       {% endif %}
-      </p>
+    </p>
   </header>
 
-  <div class="mx-auto py-8 prose md:prose-lg prose-headings:bold" itemprop="articleBody">
+  <div class="mx-auto py-8 prose md:prose-lg" itemprop="articleBody">
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     {{ content }}
   </div>
 </article>
 
+{% assign show_social = true %}
+<section class="py-4 mx-auto">{% include newsletter-subscribe.html %}</section>
+
 {% if page.comments %}
 <section>
-  <div id="disqus_thread"></div>
+  <div id=" disqus_thread">
+  </div>
   <script>
 
     var disqus_config = function () {

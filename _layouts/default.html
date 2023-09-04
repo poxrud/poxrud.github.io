@@ -28,6 +28,7 @@ phil@oxrud.com
 
   <link rel="stylesheet" href={{"/assets/css/main.css" | relative_url }}>
   {% include icons-svgs.html %}
+  {% include analytics.html %}
 </head>
 
 <body class="p-4 lg:mx-auto flex flex-col min-h-screen max-w-5xl">
@@ -47,10 +48,7 @@ phil@oxrud.com
 
   {{ content }}
 
-  <footer class="mt-auto py-6 border-t border-zinc-100 text-center mt-8">
-    {% comment}
-    {% include footer.html %}
-    {% endcomment %}
+  <footer class="py-6 border-t border-zinc-100 text-center mt-8">
     <p class="text-gray-500">©2023 Phil Oxrud. All rights reserved.</p>
   </footer>
 </body>

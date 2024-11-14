@@ -15,7 +15,7 @@ layout: default
 
   <div class="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
     <section>
-      <h2 class="text-center lg:text-left text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+      <h2 class="text-center lg:text-left text-2xl font-semibold tracking-tight text-zinc-800">
         My Articles and Tutorials
       </h2>
       <ul>
@@ -23,8 +23,8 @@ layout: default
         <li class="pt-4">
           {% assign date_format = site.minima.date_format | default: "%b %-d,
           %Y" %}
-          <time class="text-sm text-zinc-400 dark:text-zinc-500">{{ post.date | date: date_format }}</time>
-          <p class="text-base tracking-tight text-zinc-800 dark:text-zinc-100">
+          <time class="text-sm text-zinc-400">{{ post.date | date: date_format }}</time>
+          <p class="text-base tracking-tight text-zinc-800">
             <a href="{{ post.url | relative_url }}" class="text-blue-500">{{ post.title | escape }}</a>
           </p>
         </li>

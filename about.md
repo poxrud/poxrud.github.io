@@ -3,7 +3,7 @@ layout: default
 title: "About"
 ---
 
-<h2 class="mx-auto pb-4 lg:text-left text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">About</h2>
+<h2 class="mx-auto pb-4 lg:text-left text-2xl font-semibold tracking-tight text-zinc-800">About</h2>
 
 <div class="mx-auto prose">Hi, my name is Phil Oxrud, a Toronto based web developer with a passion for crafting innovative cloud based solutions. Currently my primary focus is on specializing in Node, React, Python, Postgres, and AWS based solutions. Recently I became a certified <i>AWS Solutions Architect Professional.</i> </div>
 
